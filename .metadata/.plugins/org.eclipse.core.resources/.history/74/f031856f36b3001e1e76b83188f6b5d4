@@ -1,0 +1,18 @@
+package Course.Management.System;
+import javax.swing.*;
+
+public class Splash extends JFrame {
+
+    Splash() {
+//        ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icon.png")); // Replace "icon.png" with the actual name of your image file
+//        setIconImage(imageIcon.getImage());
+
+        setLocation(250, 50);
+        setSize(1000, 700);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new Splash();
+    }
+}
