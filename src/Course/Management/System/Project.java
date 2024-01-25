@@ -178,10 +178,10 @@ public class Project extends JFrame implements ActionListener {
             } catch (Exception e) {
                 
             }
-//        } else if (msg.equals("New Faculty Information")) {
-//            new AddTeacher();
-//        } else if (msg.equals("New Student Information")) {
-//            new AddStudent();
+        } else if (msg.equals("New Faculty Information")) {
+            new AddTeacher();
+        } else if (msg.equals("New Student Information")) {
+            new AddStudent();
 //        } else if (msg.equals("View Faculty Details")) {
 //            new TeacherDetails();
 //        } else if (msg.equals("View Student Details")) {
