@@ -77,20 +77,6 @@ public class Project extends JFrame implements ActionListener {
         updatestudentinfo.addActionListener(this);
         updateInfo.add(updatestudentinfo);
         
-        // fee
-        JMenu fee = new JMenu("Fee Details");
-        fee.setForeground(Color.GREEN);
-        mb.add(fee);
-        
-        JMenuItem feestructure = new JMenuItem("Fee Structure");
-        feestructure.setBackground(Color.WHITE);
-        feestructure.addActionListener(this);
-        fee.add(feestructure);
-        
-        JMenuItem feeform = new JMenuItem("Student Fee Form");
-        feeform.setBackground(Color.WHITE);
-        feeform.addActionListener(this);
-        fee.add(feeform);
         
         // Utility
         JMenu utility = new JMenu("Utility");
@@ -163,14 +149,10 @@ public class Project extends JFrame implements ActionListener {
             new UpdateStudent();
         } else if (msg.equals("Enter Marks")) {
             new EnterMarks();
-//        } else if (msg.equals("Examination Results")) {
-//            new ExaminationDetails();
-//        } else if (msg.equals("Fee Structure")) {
-//            new FeeStructure();
-//        } else if (msg.equals("About")) {
-//            new About();
-//        } else if (msg.equals("Student Fee Form")) {
-//            new StudentFeeForm();
+        } else if (msg.equals("Examination Results")) {
+            new ExaminationDetails();
+        } else if (msg.equals("About")) {
+            new About();
         }
     }
     
