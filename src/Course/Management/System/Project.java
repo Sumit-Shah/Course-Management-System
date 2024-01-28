@@ -8,7 +8,7 @@ public class Project extends JFrame implements ActionListener {
     Project() {
         setSize(1540, 850);
         
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/third.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/First.jpg"));
         Image i2 = i1.getImage().getScaledInstance(1500, 750, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
@@ -46,35 +46,6 @@ public class Project extends JFrame implements ActionListener {
         studentdetails.addActionListener(this);
         details.add(studentdetails);
         
-        // Leave
-        JMenu leave = new JMenu("Apply Leave");
-        leave.setForeground(Color.GREEN);
-        mb.add(leave);
-        
-        JMenuItem facultyleave = new JMenuItem("Faculty Leave");
-        facultyleave.setBackground(Color.WHITE);
-        facultyleave.addActionListener(this);
-        leave.add(facultyleave);
-        
-        JMenuItem studentleave = new JMenuItem("Student Leave");
-        studentleave.setBackground(Color.WHITE);
-        studentleave.addActionListener(this);
-        leave.add(studentleave);
-        
-        // Leave Details
-        JMenu leaveDetails = new JMenu("Leave Details");
-        leaveDetails.setForeground(Color.GREEN);
-        mb.add(leaveDetails);
-        
-        JMenuItem facultyleavedetails = new JMenuItem("Faculty Leave Details");
-        facultyleavedetails.setBackground(Color.WHITE);
-        facultyleavedetails.addActionListener(this);
-        leaveDetails.add(facultyleavedetails);
-        
-        JMenuItem studentleavedetails = new JMenuItem("Student Leave Details");
-        studentleavedetails.setBackground(Color.WHITE);
-        studentleavedetails.addActionListener(this);
-        leaveDetails.add(studentleavedetails);
         
         // Exams
         JMenu exam = new JMenu("Examination");
@@ -182,24 +153,16 @@ public class Project extends JFrame implements ActionListener {
             new AddTeacher();
         } else if (msg.equals("New Student Information")) {
             new AddStudent();
-//        } else if (msg.equals("View Faculty Details")) {
-//            new TeacherDetails();
-//        } else if (msg.equals("View Student Details")) {
-//            new StudentDetails();
-//        } else if (msg.equals("Faculty Leave")) {
-//            new TeacherLeave();
-//        } else if (msg.equals("Student Leave")) {
-//            new StudentLeave();
-//        } else if (msg.equals("Faculty Leave Details")) {
-//            new TeacherLeaveDetails();
-//        } else if (msg.equals("Student Leave Details")) {
-//            new StudentLeaveDetails();
-//        } else if (msg.equals("Update Faculty Details")) {
-//            new UpdateTeacher();
-//        } else if (msg.equals("Update Student Details")) {
-//            new UpdateStudent();
-//        } else if (msg.equals("Enter Marks")) {
-//            new EnterMarks();
+        } else if (msg.equals("View Faculty Details")) {
+            new TeacherDetails();
+        } else if (msg.equals("View Student Details")) {
+            new StudentDetails();
+        } else if (msg.equals("Update Faculty Details")) {
+            new UpdateTeacher();
+        } else if (msg.equals("Update Student Details")) {
+            new UpdateStudent();
+        } else if (msg.equals("Enter Marks")) {
+            new EnterMarks();
 //        } else if (msg.equals("Examination Results")) {
 //            new ExaminationDetails();
 //        } else if (msg.equals("Fee Structure")) {
